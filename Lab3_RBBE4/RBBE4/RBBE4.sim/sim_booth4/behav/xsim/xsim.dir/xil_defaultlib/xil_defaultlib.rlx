@@ -1,0 +1,12 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.sim/sim_booth4/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sim_booth4/new/sim_booth4_top.v,1585930840,verilog,,,,sim_booth4_top,,,,,,,,
+D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sim_rba64/new/booth4.v,1585930728,verilog,,D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/cla16_fa.v,,booth4,,,,,,,,
+D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/cla16_fa.v,1585906813,verilog,,D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/cla4.v,,cla16_fa,,,,,,,,
+D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/cla4.v,1585904041,verilog,,D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/cla4_fa.v,,cla4,,,,,,,,
+D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/cla4_fa.v,1585904879,verilog,,D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/cla64_fa.v,,cla4_fa,,,,,,,,
+D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/cla64_fa.v,1585912697,verilog,,D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/full_adder.v,,cla64_fa,,,,,,,,
+D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/full_adder.v,1585910074,verilog,,D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sim_booth4/new/sim_booth4_top.v,,full_adder,,,,,,,,

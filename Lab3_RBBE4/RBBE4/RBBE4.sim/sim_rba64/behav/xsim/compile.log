@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/rba.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rba
+INFO: [VRFC 10-2458] undeclared symbol s_pos, assumed default net type wire [D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/rba.v:39]
+INFO: [VRFC 10-2458] undeclared symbol s_neg, assumed default net type wire [D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/rba.v:39]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sources_1/new/rba64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rba64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.srcs/sim_rba64/new/sim_rba64_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_rba64_top

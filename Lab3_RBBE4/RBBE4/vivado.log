@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr  4 17:30:22 2020
+# Process ID: 22944
+# Current directory: D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20952 D:\Tanimodori\Document\Lecture\HIT_2020_Spring_COMP2008\RBBE4\RBBE4.xpr
+# Log file: D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/vivado.log
+# Journal file: D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/RBBE4.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/sim_rbbe4_top_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:12 . Memory (MB): peak = 787.063 ; gain = 166.445
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/sim_rbbe4_top_behav.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_rbbe4 D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/RBBE4/sim_rbbe4_top_behav.wcfg
+reset_project
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  4 17:43:37 2020...
