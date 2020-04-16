@@ -1,0 +1,217 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr  8 17:17:11 2020
+# Process ID: 5240
+# Current directory: C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_B
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18376 C:\Users\fay\Downloads\Lab2_Handouts_0406_2\Lab2_Handouts_0406_2\Lab_BusControl_B\Lab_BusControl_B.xpr
+# Log file: C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_B/vivado.log
+# Journal file: C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_B\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_B'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'topsim_counter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj topsim_counter_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 077462f9e3c64b55b01dc39f86d9343e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot topsim_counter_behav xil_defaultlib.topsim_counter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "topsim_counter_behav -key {Behavioral:sim_1:Functional:topsim_counter} -tclbatch {topsim_counter.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source topsim_counter.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有0个设备提起请求
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有1个设备提起请求
+请求状态：设备3(0);设备2(0);设备1(0);设备0(1)
+本次设备0将得到总线控制权
+                 190时刻，设备0已得到响应
+                 210时刻，设备0完成总线访问，请求已撤出
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有1个设备提起请求
+请求状态：设备3(0);设备2(0);设备1(1);设备0(0)
+本次设备1将得到总线控制权
+                 310时刻，设备1已得到响应
+                 330时刻，设备1完成总线访问，请求已撤出
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有2个设备提起请求
+请求状态：设备3(0);设备2(0);设备1(1);设备0(1)
+本次设备0将得到总线控制权
+                 410时刻，设备0已得到响应
+                 430时刻，设备0完成总线访问，请求已撤出
+请求状态：设备3(0);设备2(0);设备1(1);设备0(0)
+本次设备1将得到总线控制权
+                 430时刻，设备1已得到响应
+                 450时刻，设备1完成总线访问，请求已撤出
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有1个设备提起请求
+请求状态：设备3(0);设备2(1);设备1(0);设备0(0)
+本次设备2将得到总线控制权
+                 570时刻，设备2已得到响应
+                 590时刻，设备2完成总线访问，请求已撤出
+========进行仲裁测试（计数起始点1）========
+======从终止点开始的循环模式======
+共有2个设备提起请求
+请求状态：设备3(0);设备2(1);设备1(0);设备0(1)
+本次设备2将得到总线控制权
+                 690时刻，设备2已得到响应
+                 710时刻，设备2完成总线访问，请求已撤出
+请求状态：设备3(0);设备2(0);设备1(0);设备0(1)
+本次设备0将得到总线控制权
+                 750时刻，设备0已得到响应
+                 770时刻，设备0完成总线访问，请求已撤出
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有2个设备提起请求
+请求状态：设备3(0);设备2(1);设备1(1);设备0(0)
+本次设备1将得到总线控制权
+                 870时刻，设备1已得到响应
+                 890时刻，设备1完成总线访问，请求已撤出
+请求状态：设备3(0);设备2(1);设备1(0);设备0(0)
+本次设备2将得到总线控制权
+                 890时刻，设备2已得到响应
+                 910时刻，设备2完成总线访问，请求已撤出
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有3个设备提起请求
+请求状态：设备3(0);设备2(1);设备1(1);设备0(1)
+本次设备0将得到总线控制权
+                 990时刻，设备0已得到响应
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'topsim_counter_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 743.441 ; gain = 20.809
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 750.090 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'topsim_counter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj topsim_counter_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_B/Lab_BusControl_B.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 077462f9e3c64b55b01dc39f86d9343e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot topsim_counter_behav xil_defaultlib.topsim_counter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有0个设备提起请求
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有1个设备提起请求
+请求状态：设备3(0);设备2(0);设备1(0);设备0(1)
+本次设备0将得到总线控制权
+                 190时刻，设备0已得到响应
+                 210时刻，设备0完成总线访问，请求已撤出
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有1个设备提起请求
+请求状态：设备3(0);设备2(0);设备1(1);设备0(0)
+本次设备1将得到总线控制权
+                 310时刻，设备1已得到响应
+                 330时刻，设备1完成总线访问，请求已撤出
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有2个设备提起请求
+请求状态：设备3(0);设备2(0);设备1(1);设备0(1)
+本次设备0将得到总线控制权
+                 410时刻，设备0已得到响应
+                 430时刻，设备0完成总线访问，请求已撤出
+请求状态：设备3(0);设备2(0);设备1(1);设备0(0)
+本次设备1将得到总线控制权
+                 430时刻，设备1已得到响应
+                 450时刻，设备1完成总线访问，请求已撤出
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有1个设备提起请求
+请求状态：设备3(0);设备2(1);设备1(0);设备0(0)
+本次设备2将得到总线控制权
+                 570时刻，设备2已得到响应
+                 590时刻，设备2完成总线访问，请求已撤出
+========进行仲裁测试（计数起始点1）========
+======从终止点开始的循环模式======
+共有2个设备提起请求
+请求状态：设备3(0);设备2(1);设备1(0);设备0(1)
+本次设备2将得到总线控制权
+                 690时刻，设备2已得到响应
+                 710时刻，设备2完成总线访问，请求已撤出
+请求状态：设备3(0);设备2(0);设备1(0);设备0(1)
+本次设备0将得到总线控制权
+                 750时刻，设备0已得到响应
+                 770时刻，设备0完成总线访问，请求已撤出
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有2个设备提起请求
+请求状态：设备3(0);设备2(1);设备1(1);设备0(0)
+本次设备1将得到总线控制权
+                 870时刻，设备1已得到响应
+                 890时刻，设备1完成总线访问，请求已撤出
+请求状态：设备3(0);设备2(1);设备1(0);设备0(0)
+本次设备2将得到总线控制权
+                 890时刻，设备2已得到响应
+                 910时刻，设备2完成总线访问，请求已撤出
+========进行仲裁测试（计数起始点0）========
+======从终止点开始的循环模式======
+共有3个设备提起请求
+请求状态：设备3(0);设备2(1);设备1(1);设备0(1)
+本次设备0将得到总线控制权
+                 990时刻，设备0已得到响应
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 750.090 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  8 18:25:32 2020...

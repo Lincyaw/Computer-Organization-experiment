@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="all_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="all_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="2306000001fs"></ZoomEndTime>
+      <Cursor1Time time="590000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="225"></NameColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="40" />
+   <wvobject fp_name="/all_sim/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/count" type="array">
+      <obj_property name="ElementShortName">count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">count[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/end_addr" type="array">
+      <obj_property name="ElementShortName">end_addr[10:0]</obj_property>
+      <obj_property name="ObjectShortName">end_addr[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/test_success" type="logic">
+      <obj_property name="ElementShortName">test_success</obj_property>
+      <obj_property name="ObjectShortName">test_success</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/test_fail" type="logic">
+      <obj_property name="ElementShortName">test_fail</obj_property>
+      <obj_property name="ObjectShortName">test_fail</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/raddr_from_cpu" type="array">
+      <obj_property name="ElementShortName">raddr_from_cpu[10:0]</obj_property>
+      <obj_property name="ObjectShortName">raddr_from_cpu[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/rreq_from_cpu" type="logic">
+      <obj_property name="ElementShortName">rreq_from_cpu</obj_property>
+      <obj_property name="ObjectShortName">rreq_from_cpu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/rdata_from_mem" type="array">
+      <obj_property name="ElementShortName">rdata_from_mem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata_from_mem[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/rvalid_from_mem" type="logic">
+      <obj_property name="ElementShortName">rvalid_from_mem</obj_property>
+      <obj_property name="ObjectShortName">rvalid_from_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/wait_data_from_mem" type="logic">
+      <obj_property name="ElementShortName">wait_data_from_mem</obj_property>
+      <obj_property name="ObjectShortName">wait_data_from_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/rdata_to_cpu" type="array">
+      <obj_property name="ElementShortName">rdata_to_cpu[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata_to_cpu[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/hit_to_cpu" type="logic">
+      <obj_property name="ElementShortName">hit_to_cpu</obj_property>
+      <obj_property name="ObjectShortName">hit_to_cpu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/rreq_to_mem" type="logic">
+      <obj_property name="ElementShortName">rreq_to_mem</obj_property>
+      <obj_property name="ObjectShortName">rreq_to_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/raddr_to_mem" type="array">
+      <obj_property name="ElementShortName">raddr_to_mem[10:0]</obj_property>
+      <obj_property name="ObjectShortName">raddr_to_mem[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/currState" type="array">
+      <obj_property name="ElementShortName">currState[2:0]</obj_property>
+      <obj_property name="ObjectShortName">currState[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/nextState" type="array">
+      <obj_property name="ElementShortName">nextState[2:0]</obj_property>
+      <obj_property name="ObjectShortName">nextState[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/formerState" type="array">
+      <obj_property name="ElementShortName">formerState[2:0]</obj_property>
+      <obj_property name="ObjectShortName">formerState[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/tag" type="array">
+      <obj_property name="ElementShortName">tag[0:2]</obj_property>
+      <obj_property name="ObjectShortName">tag[0:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/cacheAddr" type="array">
+      <obj_property name="ElementShortName">cacheAddr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">cacheAddr[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/inAddr" type="array">
+      <obj_property name="ElementShortName">inAddr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">inAddr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/dina" type="array">
+      <obj_property name="ElementShortName">dina[35:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[35:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/douta" type="array">
+      <obj_property name="ElementShortName">douta[35:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[35:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/dataout" type="array">
+      <obj_property name="ElementShortName">dataout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/hitornot" type="logic">
+      <obj_property name="ElementShortName">hitornot</obj_property>
+      <obj_property name="ObjectShortName">hitornot</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/rreq_to_mem1" type="logic">
+      <obj_property name="ElementShortName">rreq_to_mem1</obj_property>
+      <obj_property name="ObjectShortName">rreq_to_mem1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/raddr_to_mem1" type="array">
+      <obj_property name="ElementShortName">raddr_to_mem1[10:0]</obj_property>
+      <obj_property name="ObjectShortName">raddr_to_mem1[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/timeEnough" type="logic">
+      <obj_property name="ElementShortName">timeEnough</obj_property>
+      <obj_property name="ObjectShortName">timeEnough</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/fillOver" type="logic">
+      <obj_property name="ElementShortName">fillOver</obj_property>
+      <obj_property name="ObjectShortName">fillOver</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/tempData" type="array">
+      <obj_property name="ElementShortName">tempData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tempData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/hitor" type="logic">
+      <obj_property name="ElementShortName">hitor</obj_property>
+      <obj_property name="ObjectShortName">hitor</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/Ready" type="array">
+      <obj_property name="ElementShortName">Ready[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Ready[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/Tag_check" type="array">
+      <obj_property name="ElementShortName">Tag_check[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Tag_check[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/Hit" type="array">
+      <obj_property name="ElementShortName">Hit[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Hit[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/Wait_Mem" type="array">
+      <obj_property name="ElementShortName">Wait_Mem[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Wait_Mem[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/Refill" type="array">
+      <obj_property name="ElementShortName">Refill[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Refill[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/all_sim/g0/ut0/Unhit" type="array">
+      <obj_property name="ElementShortName">Unhit[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Unhit[2:0]</obj_property>
+   </wvobject>
+</wave_config>

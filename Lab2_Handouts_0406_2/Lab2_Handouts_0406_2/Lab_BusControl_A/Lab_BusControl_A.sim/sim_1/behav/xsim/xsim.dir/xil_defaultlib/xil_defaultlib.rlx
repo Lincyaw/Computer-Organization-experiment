@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sim_1/new/topsim_link.v,1586172082,verilog,,,,topsim_link,,,,,,,,
+C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/controller_link.v,1586181573,verilog,,C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/io_interface_link.v,,controller_link,,,,,,,,
+C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/io_interface_link.v,1586181977,verilog,,C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/top_link.v,,io_interface_link,,,,,,,,
+C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sources_1/new/top_link.v,1586181668,verilog,,C:/Users/fay/Downloads/Lab2_Handouts_0406_2/Lab2_Handouts_0406_2/Lab_BusControl_A/Lab_BusControl_A.srcs/sim_1/new/topsim_link.v,,top_link,,,,,,,,

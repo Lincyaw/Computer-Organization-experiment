@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr  2 17:41:00 2020
+# Process ID: 25220
+# Current directory: D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/Booth
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1128 D:\Tanimodori\Document\Lecture\HIT_2020_Spring_COMP2008\Booth\Booth.xpr
+# Log file: D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/Booth/vivado.log
+# Journal file: D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/Booth\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Tanimodori/Document/Lecture/HIT_2020_Spring_COMP2008/Booth/Booth.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 763.211 ; gain = 174.582
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  2 17:42:06 2020...
