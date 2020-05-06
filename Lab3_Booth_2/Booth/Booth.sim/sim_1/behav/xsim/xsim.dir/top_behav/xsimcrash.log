@@ -6,4 +6,5 @@ Exception at PC 0x00007FFEE1379709
 Exception at PC 0x00007FFEE1379709
 Exception at PC 0x00007FFEE1379709
 Exception at PC 0x00007FFEE1379709
+Unable to capture context for thread 3436 in process 25016, can not generate back trace
 Exception at PC 0x00007FFEE1379709

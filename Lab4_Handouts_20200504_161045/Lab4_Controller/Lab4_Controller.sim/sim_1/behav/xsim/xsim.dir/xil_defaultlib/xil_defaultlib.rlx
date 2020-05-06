@@ -1,0 +1,13 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sim_1/new/all_sim.v,1588573476,verilog,,,,all_sim,,,,,,,,
+C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sim_1/new/sum_sim.v,1588661410,verilog,,,,sum_sim,,,,,,,,
+C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/ALU.v,1588573383,verilog,,C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v,,ALU,,,,,,,,
+C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Control_Unit.v,1588725380,verilog,,C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/DataPath.v,,Control_Unit,,,,,,,,
+C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/DataPath.v,1588573362,verilog,,C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Regs.v,,DataPath,,,,,,,,
+C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/Regs.v,1588573370,verilog,,C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/mem_wrap.v,,Regs,,,,,,,,
+C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/mem_wrap.v,1588663632,verilog,,C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v,,mem_wrap,,,,,,,,
+C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sources_1/new/top.v,1588573343,verilog,,C:/Users/fay/Documents/GitHub/Computer-Organization-experiment/Lab4_Handouts_20200504_161045/Lab4_Controller/Lab4_Controller.srcs/sim_1/new/all_sim.v,,top,,,,,,,,

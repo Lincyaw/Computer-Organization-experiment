@@ -29,52 +29,73 @@
      output busy       // 输出就绪信号
      );
     
-   
-
-     reg temp_y=0;
-     reg [16:0] result=17'b0;
-     wire [16:0] temp_result;
-     assign z = result[16:1];
+     reg [19:0] result=20'b0;  //{2'b符号位,7'b x的数据, 8'b y的数据, 1'b yn+1, 1'b yn+2}
+     wire [19:0] temp_result;
+     assign z = result[17:2];
      reg [3:0] count=4'd0;
-     reg [7:0] x_neg; //保存-x的补码
-     reg [7:0] x_pos; //保存x的补码
-     reg [7:0] y_data;//保存y的补码
-     assign busy = (start==1 || count<8)?1:0;
-     assign temp_result = result>>1;  //用组合电路直接给出result 的右移一位的数值
-
+     reg [9:0] x_neg; //保存-x的补码
+     reg [9:0] x_pos; //保存x的补码
+     assign busy = (start==1 || count<4)?1:0;
+     assign temp_result = result>>2;  //用组合电路直接给出result 的右移2位的数值
+    wire [9:0]temp_x = {x[7],x[7],x};
 
      always@(posedge clk)
      begin
          if(start) //初始化
          begin
-             x_pos <= x;
-             x_neg <= ~x+ 1;
+             x_pos <= {x[7],x[7],x};
+             x_neg <= ~temp_x+ 1;
              count <= 0;
-             result<= {8'b0,y,1'b0}; //result 增加了最后一位,作为yn+1, 后面就可以用最后两位用来判断是应该加还是减,还是移位
+             result<= {10'b0,y,2'b0}; //result 增加了最后2位,作为yn+1和yn+2, 后面就可以用最后两位用来判断是应该加还是减,还是移位
          end
          else if(busy) //防止重复赋值
          begin
              count<=count+1; //计数器加1
-             case(result[1:0])
-                 2'b00:
+             case(result[3:1])
+                 3'b00:
                  begin
-                     result[15:0]<= temp_result[15:0]; //只赋值后16位的值, 保持最高位符号位不变, 实现算术移位
+                     result[17:0]<= temp_result[17:0]; //只赋值后17位的值, 保持最高位符号位不变, 实现算术移位
                  end
-                 2'b01:
+                 3'b01:
                  begin
-                     result[15:8]<=(temp_result[15:8]+x_pos);
+                     result[17:8]<=(temp_result[17:8]+x_pos);
                      result[7:0] <= temp_result[7:0];
-                     result[16] <= ((temp_result[15:8]+x_pos) & 8'b10000000) ?1:0; //把相加后的最高位给 result, 作为下次移位的符号位, 实现算术移位
+                     result[19:18] <= ((temp_result[17:8]+x_pos) & 9'b100000000) ?2'b11:2'b00; //把相加后的最高位给 result, 作为下次移位的符号位, 实现算术移位
                  end
-                 2'b10:
+                 3'b10:
                  begin
-                     result[15:8]<=(temp_result[15:8]+x_neg);
-                     result[7:0] <= temp_result[7:0];
-                     result[16] <= ((temp_result[15:8]+x_neg) &8'b10000000) ?1:0; //把相加后的最高位给 result, 作为下次移位的符号位, 实现算术移位
+                    result[17:8]<=(temp_result[17:8]+x_pos);
+                    result[7:0] <= temp_result[7:0];
+                    result[19:18] <= ((temp_result[17:8]+x_pos) & 9'b100000000) ?2'b11:2'b00; //把相加后的最高位给 result, 作为下次移位的符号位, 实现算术移位
                  end
-                 2'b11:
+                 3'b11:
                  begin
-                     result[15:0]<= temp_result[15:0];//只赋值后16位的值, 保持最高位符号位不变, 实现算术移位
+                    result[17:8]<=(temp_result[17:8]+x_pos+x_pos);
+                    result[7:0] <= temp_result[7:0];
+                    result[19:18] <= ((temp_result[17:8]+x_pos+x_pos) & 9'b100000000) ?2'b11:2'b00; //把相加后的最高位给 result, 作为下次移位的符号位, 实现算术移位
+                    
+                 end
+                 3'b100:
+                 begin
+                    result[17:8]<=(temp_result[17:8]+x_neg+x_neg);
+                    result[7:0] <= temp_result[7:0];
+                    result[19:18] <= ((temp_result[17:8]+x_neg+x_neg) & 9'b100000000) ?2'b11:2'b00; //把相加后的最高位给 result, 作为下次移位的符号位, 实现算术移位
+                 end
+                3'b101:
+                 begin
+                    result[17:8]<=(temp_result[17:8]+x_neg);
+                    result[7:0] <= temp_result[7:0];
+                    result[19:18] <= ((temp_result[17:8]+x_neg) & 9'b100000000) ?2'b11:2'b00; //把相加后的最高位给 result, 作为下次移位的符号位, 实现算术移位
+                 end
+                3'b110:
+                 begin
+                    result[17:8]<=(temp_result[17:8]+x_neg);
+                    result[7:0] <= temp_result[7:0];
+                    result[19:18] <= ((temp_result[17:8]+x_neg) & 9'b100000000) ?2'b11:2'b00; //把相加后的最高位给 result, 作为下次移位的符号位, 实现算术移位
+                 end
+                3'b111:
+                 begin
+                     result[17:0]<= temp_result[17:0]; //只赋值后16位的值, 保持最高位符号位不变, 实现算术移位
                  end
              endcase
          end
@@ -83,70 +104,3 @@
      end
  endmodule
 
-
-
-
-//module booth(
-//    input clk,        // 时钟信号
-//    input [7:0] x,    // 乘数
-//    input [7:0] y,    // 被乘数
-//    input start,      // 输入就绪信号
-//    output [15:0] z,  // 积
-//    output busy       // 输出就绪信号
-//    );
-    
-   
-
-//    reg temp_y=0;
-//    reg [16:0] result=17'b0;
-//    wire [16:0] temp_result;
-//    assign z = result[16:1];
-//    reg [3:0] count=4'd0;
-//    reg [7:0] x_neg; //保存-x的补码
-//    reg [7:0] x_pos; //保存x的补码
-//    reg [7:0] y_data;//保存y的补码
-//    assign busy = (start==1 || count<8)?1:0;
-//    assign temp_result = result>>1;  //用组合电路直接给出result 的右移一位的数值
-
-//    always@(posedge start)
-//    begin
-//        x_pos <= x;
-//        x_neg <= ~x+ 1;
-//        y_data <= y;
-//    end
-
-//    always@(posedge clk)
-//    begin
-//        if(start) //初始化
-//        begin
-//            temp_y=0;
-//            count <= 0;
-//            result<= 17'b0; //result 增加了最后一位,作为yn+1, 后面就可以用最后两位用来判断是应该加还是减,还是移位
-//        end
-//        else if(busy) //防止重复赋值
-//        begin
-//            temp_y <= y_data[0];
-//            count<=count+1; //计数器加1
-//            y_data <= y_data >> 1;
-//            if(temp_y==y_data[0])
-//            begin
-//                result[15:0]<= temp_result[15:0]; //只赋值后16位的值, 保持最高位符号位不变, 实现算术移位
-//            end
-//            else if (temp_y)
-//            begin
-//                result[15:8]<=(temp_result[15:8]+x_pos);
-//                result[7:0] <= temp_result[7:0];
-//                result[16] <= ((temp_result[15:8]+x_pos) & 8'b10000000) ?1:0; //把相加后的最高位给 result, 作为下次移位的符号位, 实现算术移位
-//            end
-//            else
-//            begin           
-//                result[15:8]<=(temp_result[15:8]+x_neg);
-//                result[7:0] <= temp_result[7:0];
-//                result[16] <= ((temp_result[15:8]+x_neg) &8'b10000000) ?1:0; //把相加后的最高位给 result, 作为下次移位的符号位, 实现算术移位
-//            end
-        
-//        end
-        
-        
-//    end
-//endmodule
