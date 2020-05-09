@@ -52,9 +52,9 @@ wire condSel = curr_code[10];
 wire [1:0]nextAddrSel = curr_code[9:8];
 wire [7:0]addr = curr_code[7:0];
 reg [7:0] nextAddress=0;
-// always@(*)//ÄÇ¸öÉ¶ÍæÒâMUX
-// begin
-//     curr_code = ucode_mem[uPC];//È¡³öÎ¢Ö¸Áî
+// always@(*)//é‚£ä¸ªå•¥ç©æ„MUX
+// begin 
+//     curr_code = ucode_mem[uPC];//å–å‡ºå¾®æŒ‡ä»¤
 //     if(nextAddrSel==2'b00)
 //     begin
 //         nextAddress <= uPC+1;
@@ -103,9 +103,9 @@ reg [7:0] nextAddress=0;
 //     end
 // end
 
-always@(*)//ÄÇ¸öÉ¶ÍæÒâMUX
+always@(*)//é‚£ä¸ªå•¥ç©æ„MUX
 begin
-    curr_code = ucode_mem[uPC];//È¡³öÎ¢Ö¸Áî
+    curr_code = ucode_mem[uPC];//å–å‡ºå¾®æŒ‡ä»¤
 
         case (IR[7:4])
         4'b0000: begin
@@ -277,10 +277,10 @@ begin
     begin
         uPC<=addr;
     end
-    else if (condJMP==1&&condSel==0&&ZF==0) begin//jz,µ«ÊÇ²»Îª0,¾Í»Øµ½È¡Ö¸
+    else if (condJMP==1&&condSel==0&&ZF==0) begin//jz,ä½†æ˜¯ä¸ä¸º0,å°±å›åˆ°å–æŒ‡
         uPC<=addr;
     end
-    else if(condJMP==1&&condSel==1&&ZF==1)begin//jnz,µ«ÊÇÎª0,¾Í»Øµ½È¡Ö¸
+    else if(condJMP==1&&condSel==1&&ZF==1)begin//jnz,ä½†æ˜¯ä¸º0,å°±å›åˆ°å–æŒ‡
         uPC<=addr;
     end
     else
